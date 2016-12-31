@@ -7,7 +7,7 @@ module Beaker
     #
     # @return [String] a random mac address
     def randmac
-      "080027" + (1..3).map{"%0.2X"%rand(256)}.join
+      "08:00:27" + (1..3).map{"%0.2X"%rand(256)}.join(":")
     end
 
     def rand_chunk
